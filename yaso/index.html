@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Yasotha-portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="intro">
+            <h1>Hi, I'm <span class="highlight">Yasotha</span></h1>
+            <p>A passionate <span class="highlight">Web developer</span>designing and developing dynamic applications.</p>
+            <img src="C:\Users\admin\Downloads\download (1).jpg" alt="Your Photo" class="profile-pic"><br>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="content">
+            <h2>About Me</h2>
+            <div class="line"></div>
+            <p>
+            I am 21 yrs smart girl with dynamic and enthusiastic person looking for the job Web Development 
+            and software development mostly specializing in front end development.A firm believer in my own abilities,
+            i am also a team player who thrives in a challenging environment.I am a fresher with new and dynamics project ideas.
+            And,i am well-versed in numerous programming languages like HTML5,CSS,JS,JAVA,MYSQL and strong background in project management and customer relations.
+          </p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="line"></div>
+        <div class="skills-container">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS3</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">MYSQL</div>
+            <div class="skill-card">Git & GitHub</div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="line"></div>
+        
+            <div class="project-card">
+                <h3>Automatic tollgate system</h3>
+                <p>Domain : IOT</p>
+                <a href="#" class="btn" onclick="toggleDetails(event, 'project-details-1')">View Project</a>
+            </div>
+     
+            <!-- First Project Details -->
+            <section id="project-details-1" class="project-details" style="display: none;">
+                <h2>Automatic tollgate system</h2>
+                <p>The Automatic Tollgate System is an IoT-based solution that automates toll collection using C programming. Sensors detect vehicle presence and send data to a microcontroller, which processes this information to control the tollgate mechanism. The system manages toll payments and gate operations, ensuring smooth traffic flow and accurate toll collection. Real-time updates are transmitted to a central control unit for monitoring and operational adjustments.</p>
+               
+            </section>
+    
+            <!-- Second Project Card -->
+            <div class="project-card">
+                <h3>Smart dustbin using Arudino</h3>
+                <p>Domain : IOT</p>
+                <a href="#" class="btn" onclick="toggleDetails(event, 'project-details-2')">View Project</a>
+            </div>
+    
+            <!-- Second Project Details -->
+            <section id="project-details-2" class="project-details" style="display: none;">
+                <h2>Smart dustbin using Arudino</h2>
+                <p>The Smart Dustbin System is an IoT-based solution that automates waste management using C programming. Sensors detect the fill level of the dustbin and send data to a microcontroller, which processes this information to manage waste collection schedules. The system optimizes waste disposal by sending real-time updates to a central control unit for efficient route planning and operational adjustments.</p>
+                
+            </section>
+        </div>
+    </section>
+    
+    
+            <script>
+                function toggleDetails(event, id) {
+                    event.preventDefault(); // Prevent default link behavior
+                
+                    var detailsSection = document.getElementById(id);
+                
+                    if (detailsSection.style.display === 'none') {
+                        detailsSection.style.display = 'block';
+                    } else {
+                        detailsSection.style.display = 'none';
+                    }
+                }
+                </script>
+                
+        </div>
+    </section> 
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="line"></div>
+        <p>Email: <a href="#">yasotha0603@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yasotha-n-6bb159315/" target="_blank">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/yasotha" target="_blank">GitHub Profile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Yasotha. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
